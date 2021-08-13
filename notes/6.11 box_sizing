@@ -1,0 +1,3 @@
+css 에서 
+box-sizing:border-box 를 사용하게 되면
+최대 width를 넘어가지 않고 그 안에 자리한다.
