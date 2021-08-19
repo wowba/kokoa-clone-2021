@@ -8,9 +8,9 @@
   position: relative;
   margin-top: -10px;
 }
-.fa-info-circle {
-  margin-right: 10px;
+#friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
 }
 .fa-chevron-right {
   margin-left: 12px;

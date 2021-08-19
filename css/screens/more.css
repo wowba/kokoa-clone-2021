@@ -1,0 +1,46 @@
+.more-component__subtitle {
+  display: block;
+  border: 2px solid tomato;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: tomato;
+  text-align: center;
+}
+
+.more-screen .icons-row {
+  margin: 30px 0px;
+}
+.suggestions {
+  border-top: var(--main-border);
+}
+.suggestions__title {
+  margin: 30px 0px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.suggestions__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.suggestions__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+}
+.suggestions__icon span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+.suggestions__icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  margin-bottom: 10px;
+}
