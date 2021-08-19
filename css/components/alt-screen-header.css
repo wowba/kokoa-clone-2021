@@ -15,3 +15,7 @@
 .alt-header_column:last-child {
   margin-left: auto;
 }
+.alt-header_column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}

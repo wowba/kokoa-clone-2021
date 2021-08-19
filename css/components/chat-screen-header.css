@@ -1,0 +1,30 @@
+.chat-screen-header {
+  padding: var(--horizontal--space);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #a0b9c9;
+}
+.chat-screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.chat-screen-header__column span:nth-child(2) {
+  margin-left: 20px;
+}
+.chat-screen-header__column {
+  width: 33%;
+}
+.chat-screen-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.chat-screen-header__column:nth-child(2) {
+  text-align: center;
+}

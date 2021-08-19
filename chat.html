@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings - WOWBA TALK</title>
+    <title>Chat - WOWBA TALK</title>
     <link rel="stylesheet" href="css/style.css" />
     <style></style>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -24,75 +24,35 @@
       </div>
     </div>
 
-    <header class="alt-header">
-      <div class="alt-header__column">
-        <a href="more.html"><i class="fas fa-angle-left fa-3x"></i></a>
+    <header class="chat-screen-header">
+      <div class="chat-screen-header__column">
+        <a href="javascript:history.back();"
+          ><i class="fas fa-angle-left fa-3x"></i
+        ></a>
       </div>
-      <div class="alt-header__column">
-        <span class="alt-header__title">Settings</span>
+      <div class="chat-screen-header__column">
+        <span class="chat-screen-header__title">WOWBA</span>
       </div>
-      <div class="alt-header__column">
-        <i class="fas fa-search fa-lg fa-2x"></i>
+      <div class="chat-screen-header__column">
+        <span><i class="fas fa-search fa-lg fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <ul class="settings__list">
-        <li class="settings__setting">
-          <div class="settings__setting__column">
-            <i class="fas fa-bullhorn fa-lg"></i><span>Notices</span>
-          </div>
-          <div class="settings__setting__column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting__column">
-            <i class="fas fa-flask fa-lg"></i><span>Kakao Lab</span>
-          </div>
-          <div class="settings__setting__column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting__column">
-            <i class="fas fa-info-circle fa-lg"></i><span>Version</span>
-          </div>
-          <div class="settings__setting__column">
-            <span>Latest Version</span>
-          </div>
-        </li>
-      </ul>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Monday, August 20, 2021</div>
+
+      <div class="message-row">
+        <img
+          src="https://static-cdn.jtvnw.net/jtv_user_pictures/d9b514d6-2b2e-4d68-9453-5d72a7b545ec-profile_image-70x70.png"
+        />
+        <span class="message__author">WOWBA</span>
+        <div class="message__info">
+          <span class="message__bubble">hi</span>
+          <span class="message__time">15:57</span>
+        </div>
+      </div>
     </main>
-
-    <div class="find-icons"></div>
-
-    <nav>
-      <ul>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__btn">
-              <a class="nav__link" href="friends.html"
-                ><i class="far fa-user fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a class="nav__link" href="chats.html">
-                <span class="nav__notification badge">6</span
-                ><i class="far fa-comment fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a class="nav__link" href="find.html"
-                ><i class="fas fa-search fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a class="nav__link" href="more.html">
-                <span class="nav__dot"></span>
-                <i class="fas fa-ellipsis-h fa-2x"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </ul>
-    </nav>
 
     <script
       src="https://kit.fontawesome.com/703e17034a.js"
