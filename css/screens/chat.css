@@ -14,15 +14,20 @@
 .chat__timestamp {
   color: white;
   background-color: slategray;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 10px 15px;
+  border-radius: 17px;
   font-size: 14px;
   margin-bottom: 25px;
 }
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 10px;
 }
+.message-row--own {
+  justify-content: flex-end;
+}
+
 .message-row img {
   height: 40px;
   width: 40px;
@@ -30,7 +35,88 @@
   margin-right: 10px;
 }
 .message__author {
-  opacity: 0.8;
+  display: block;
+  opacity: 0.6;
   font-size: 12px;
   margin-bottom: 5px;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__bubble {
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 13px;
+  border-top-left-radius: 0px;
+}
+.message__time {
+  opacity: 0.6;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 12px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+.message-row--own .message__bubble {
+  margin-left: 8px;
+}
+.reply {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px 20px;
+}
+.reply input {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+}
+.reply__column:last-child {
+  position: relative;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+.reply__column:last-child > i {
+  right: 40px;
+  top: 10px;
+}
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply__column button i {
+  opacity: 1;
 }
