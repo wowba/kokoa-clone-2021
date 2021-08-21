@@ -76,12 +76,14 @@
   align-items: center;
   background-color: white;
   padding: 5px 20px;
+  transition: all 0.3s ease-in-out;
 }
 .reply input {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 15px;
-  width: 100%;
+  width: 95%;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -96,8 +98,8 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: -3px;
-  top: 2px;
+  right: 1px;
+  top: 3px;
 }
 .reply__column:last-child > i {
   right: 40px;
@@ -119,4 +121,72 @@
 }
 .reply__column button i {
   opacity: 1;
+}
+.message-left {
+  animation: fadeInLeft 1s linear;
+}
+@keyframes fadeInTop {
+  from {
+    transform: translatey(-30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.chat__timestamp {
+  animation: fadeInTop 1s linear;
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translatex(-30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-right {
+  animation: fadeInRight 1s linear;
+}
+@keyframes fadeInRight {
+  from {
+    transform: translatex(30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-left img:hover {
+  animation: imgrotate 1s infinite;
+}
+@keyframes imgrotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+.reply:focus-within .reply__column:first-child {
+  opacity: 0;
+  visibility: hidden;
+}
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-12.5%) translateY(-80px);
+  box-sizing: border-box;
+}
+.reply:focus-within {
+  transform: translateY(80px);
 }

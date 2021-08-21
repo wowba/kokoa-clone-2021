@@ -26,9 +26,7 @@
 
     <header class="chat-screen-header">
       <div class="chat-screen-header__column">
-        <a href="javascript:history.back();"
-          ><i class="fas fa-angle-left fa-3x"></i
-        ></a>
+        <a href="chats.html"><i class="fas fa-angle-left fa-3x"></i></a>
       </div>
       <div class="chat-screen-header__column">
         <span class="chat-screen-header__title">WOWBA</span>
@@ -42,7 +40,7 @@
     <main class="main-screen main-chat">
       <div class="chat__timestamp">Monday, August 20, 2021</div>
 
-      <div class="message-row">
+      <div class="message-row message-left">
         <img
           src="https://static-cdn.jtvnw.net/jtv_user_pictures/d9b514d6-2b2e-4d68-9453-5d72a7b545ec-profile_image-70x70.png"
         />
@@ -55,7 +53,7 @@
         </div>
       </div>
 
-      <div class="message-row message-row--own">
+      <div class="message-row message-row--own message-right">
         <div class="message-row__content">
           <div class="message__info">
             <span class="message__bubble">have a good day</span>
@@ -66,7 +64,9 @@
     </main>
 
     <form class="reply">
-      <div class="reply__column"><i class="far fa-plus-square fa-lg"></i></div>
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
       <div class="reply__column">
         <input type="text" placeholder="i'm handsome" />
         <i class="far fa-smile-wink fa-lg"></i>

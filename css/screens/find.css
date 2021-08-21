@@ -85,3 +85,23 @@
 .fa-heart {
   margin-right: 5px;
 }
+
+@keyframes hearthbeat {
+  0% {
+    transform: scale(1);
+    color: white;
+  }
+  50% {
+    transform: scale(1.5);
+    color: tomato;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}
+
+.open-post__like i:hover {
+  will-change: transform;
+  animation: hearthbeat 0.7s linear infinite;
+}
